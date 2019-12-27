@@ -387,5 +387,6 @@ create_charts <- function() {
     width = 15,
     height = 9
   )
-  NULL
+  message('Figures and data refreshed\n')
+  invisible(NULL)
 }
