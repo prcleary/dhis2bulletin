@@ -1,0 +1,64 @@
+---
+title: "`r format(Sys.Date(), '%d %B %Y')`"
+output: 
+  word_document:
+    reference_docx: weekly_surveillance_report_template.docx
+---
+
+The Ministry of National Health Services, Regulations and Coordination (MoNHSRC) partially rolled out the implementation of Integrated Disease Surveillance and Response (IDSR) in 2019, which make us enable to issue weekly bulletin.
+
+# Key messages
+
+- **Overall, number of cases for the most of IDSR diseases decreased this week.**
+- **Two cases of Measles has been reported from Killa Abdullah, Balochistan while one from ICT, Islamabad in last week.**
+- **ARI and ILI cases from all reporting sites remained at lower side. However, Mirpur-AJK reported 06 SARI cases last week.**
+- **Despite of overall drop in temperature across country, diarrhoeal cases among both age groups are being reported from all IDSR sites, predominantly from drought districts.**
+- **For the past 04 weeks, we are receiving Diphtheria alerts from districts of Balochistan, last week 04 new diphtheria cases reported from Killa Abdullah.**
+
+# Integrated Disease Surveillance and Response (IDSR) Sites
+
+Table to go here
+
+# Dengue Outbreak Update
+
+The National Institute of Health, Emergency Operation Center (EOC) has been activated since 16th September 2019 to monitor the disease situation. A daily situation report is being disseminated to federal and provincial health departments.
+
+The Seasonal Awareness & Alert Letter (SAAL) and Advisory on Prevention and Control of Dengue has been widely disseminated and made available at NIH website: [www.nih.org.pk](www.nih.org.pk) along with IEC material. The National Guidelines for Dengue Vectors Control in Pakistan are also available at Directorate of Malaria Control. Website [www.dmc.gov.pk](www.dmc.gov.pk).
+
+![Figure 1. IDSR priority diseases reported during last 4 weeks from reporting districts of Pakistan](fig1plot.png)
+
+![Figure 2. IDSR priority diseases reported during last 12 weeks from reporting districts of Pakistan](fig1plot.png)
+
+![Figure 3. IDSR priority diseases reported from Azad Jammu and Kashmir (Mirpur) during last 4 weeks](fig3plot.png)
+
+![Figure 4: IDSR priority diseases reported from Balochistan (Gwadar, Kech and Killa Abdullah) during last 4 weeks](fig4plot.png)
+
+![Figure 5: IDSR priority diseases reported from Khyber Pakhtunkhwa (Haripur and Lakki Marwat) during last 4 weeks](fig5plot.png)
+
+![Figure 6: IDSR priority diseases reported from Islamabad (ICT HF) during last 4 weeks](fig6plot.png)
+
+# IDSR Background
+
+As part of IHR monitoring framework, Joint External Evaluation (JEE) was conducted in 2016, which recommended establishing disease surveillance and response mechanism in Pakistan as an essential core capacity. Accordingly, an Integrated Disease Surveillance and Response (IDSR) system was developed and has been initially rolled out to one district from every province/regions. KP and AJK are sending data on regular basis. Three drought affected districts from Balochistan and two from Sindh have also been included in the IDSR System. All three districts of Balochistan are sharing data on weekly basis and analyzed using DHIS-2 platform. And other districts will come on board as the training and support is rolled out.
+
+# Objectives
+
+-	To establish an IDSRS with monitoring disease burden and its trends
+-	To strengthen data management and timely and effective public health response
+-	To enhance the capacity of health manpower both in terms of knowledge and skills
+-	Ensure early detection of outbreaks/ epidemics for prompt response
+
+# News & Events
+
+Following activities were conducted during last week (04-10 November 2019):
+
+-	A team from the National Institute of Health (NIH) along with Public Health England (PHE) visited District Hyderabad, Sindh for the implementation of IDSR system. Team had a meeting with DHO and briefed about IDSR, its importance and urgent need for IDSR implementation keeping in view the current outbreaks within the province. Team also met with Director General for his support to make IDSR operational.
+
+The tables below were describing the data excluding agreed IDSR priority diseases, they are mainly drought affected areas (support provided by WHO)
+
+![Figure 7: Reported cases of other diseases from reporting AJK districts during last 4 weeks](fig7plot.png)
+
+![Figure 8: Reported cases of other diseases from reporting Balochistan districts during last 4 weeks](fig8plot.png)
+
+![Figure 9: Reported cases of other diseases from reporting Khyber Pakhtunkhwa districts during last 4 weeks](fig9plot.png)
+

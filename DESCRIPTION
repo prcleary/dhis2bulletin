@@ -1,0 +1,21 @@
+Package: dhis2bulletin
+Title: Extract DHIS 2 Data And Create Bulletin
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Paul",
+           family = "Cleary",
+           role = c("aut", "cre"),
+           email = "paul.cleary@phe.gov.uk",
+           comment = c(ORCID = "https://orcid.org/0000-0001-9335-5422"))
+Description: Extract data from DHIS 2 and create a bulletin.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.0
+NeedsCompilation: no
+Depends: R (>= 3.1.0)
+Imports: data.table (>= 1.9.8), rstudioapi, httr, ggplot2 (>= 2.2.0), knitr, rmarkdown, stringr, ISOweek, devtools
+Remotes: ukgovdatascience/govstyle
+Maintainer: Paul Cleary <paul.cleary@phe.gov.uk>
+
+
