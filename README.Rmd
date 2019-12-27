@@ -20,9 +20,7 @@ Draft R code for extracting data from DHIS 2 and populating a bulletin template.
 
 Make sure that your computer is connected to the Internet and that you have previously followed the **Prerequisites** and **Installing** steps below to install everything required.
 
-Create a new folder where you want the surveillance bulletin and associated outputs to be created. Then create a new project with this folder using the RStudio menu: File -> New Project -> Existing Directory -> Browse to the new folder just created.[^openproject]
-
-[^openproject]: Next time you run the bulletin, open the project folder and double-click the .Rproj file to start RStudio.
+Create a new folder where you want the surveillance bulletin and associated outputs to be created. Then create a new project with this folder using the RStudio menu: File -> New Project -> Existing Directory -> Browse to the new folder just created.
 
 You can then create the weekly surveillance bulletin charts with the following four lines of code in RStudio:
 
@@ -36,7 +34,21 @@ You will be asked for your DHIS 2 user name and password. Two folders will be cr
 
 Then open a new Markdown template using the menu: File -> New File -> R Markdown. In the dialogue box that opens select "From Template" then "federal" then click "OK". Save this file in the project folder you created earlier (File -> Save As).
 
-Then click "Knit" at the top of the Markdown template. When running this the first time you will be asked where to save the resulting draft bulletin. The draft bulletin will then open as a Word document for your modifications.
+Then click "Knit" at the top of the Markdown template. When running this the first time you will be asked where to save the resulting draft bulletin. The draft bulletin will then open as a Word document which can then be updated. Optionally you can amend the template file if you know Markdown.
+
+## Routine use
+
+Once the above steps have been done once, then to re-run the bulletin requires only the following steps.
+
+Open the project folder and double-click the `.Rproj` file to open RStudio. Run the following four lines of code:
+
+```
+library(govstyle)
+library(dhis2bulletin)
+create_charts()
+```
+
+Open the template file created previously and click "Knit" at the top. The updated bulletin Word document will open.
 
 ## Prerequisites
 
