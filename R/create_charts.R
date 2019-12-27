@@ -9,6 +9,10 @@
 #' # Not run
 #' # create_charts()
 create_charts <- function() {
+  # Create directory for figures and data
+  dir.create('figs')
+  dir.create('data')
+
   get_logindetails()
   # URLs for last 4 and 12 weeks in AJK, KP, Balochistan, ICT
   ajk_url_4weeks <-
@@ -30,30 +34,30 @@ create_charts <- function() {
 
   # Download and combine data
   ajk_4weeks <-
-    get_pivottable(ajk_url_4weeks, filename = 'ajk_4weeks.csv')
+    get_pivottable(ajk_url_4weeks, filename = 'data/ajk_4weeks.csv')
   ajk_4weeks[, Province := 'Azad Jamu and Kashmir']
   bal_4weeks <-
-    get_pivottable(bal_url_4weeks, filename = 'bal_4weeks.csv')
+    get_pivottable(bal_url_4weeks, filename = 'data/bal_4weeks.csv')
   bal_4weeks[, Province := 'Balochistan']
   ict_4weeks <-
-    get_pivottable(ict_url_4weeks, filename = 'ict_4weeks.csv')
+    get_pivottable(ict_url_4weeks, filename = 'data/ict_4weeks.csv')
   ict_4weeks[, Province := 'ICT']
   kp_4weeks <-
-    get_pivottable(kp_url_4weeks, filename = 'kp_4weeks.csv')
+    get_pivottable(kp_url_4weeks, filename = 'data/kp_4weeks.csv')
   kp_4weeks[, Province := 'Khyber Pakhtunkhwa']
   all_4weeks <-
     data.table::rbindlist(list(ajk_4weeks, bal_4weeks, ict_4weeks, kp_4weeks))
   ajk_12weeks <-
-    get_pivottable(ajk_url_12weeks, filename = 'ajk_12weeks.csv')
+    get_pivottable(ajk_url_12weeks, filename = 'data/ajk_12weeks.csv')
   ajk_12weeks[, Province := 'Azad Jamu and Kashmir']
   bal_12weeks <-
-    get_pivottable(bal_url_12weeks, filename = 'bal_12weeks.csv')
+    get_pivottable(bal_url_12weeks, filename = 'data/bal_12weeks.csv')
   bal_12weeks[, Province := 'Balochistan']
   ict_12weeks <-
-    get_pivottable(ict_url_12weeks, filename = 'ict_12weeks.csv')
+    get_pivottable(ict_url_12weeks, filename = 'data/ict_12weeks.csv')
   ict_12weeks[, Province := 'ICT']
   kp_12weeks <-
-    get_pivottable(kp_url_12weeks, filename = 'kp_12weeks.csv')
+    get_pivottable(kp_url_12weeks, filename = 'data/kp_12weeks.csv')
   kp_12weeks[, Province := 'Khyber Pakhtunkhwa']
   all_12weeks <-
     data.table::rbindlist(list(ajk_12weeks, bal_12weeks, ict_12weeks, kp_12weeks))
@@ -94,6 +98,7 @@ create_charts <- function() {
 
   # Wrap long strings for axes
   all_4weeks[, Data_wrap := stringr::str_wrap(Data, width = 10)]
+
 
   # Figure 1. Distribution of IDSR Priority Diseases Reported during last 4 weeks from Reporting Districts of Pakistan
 
