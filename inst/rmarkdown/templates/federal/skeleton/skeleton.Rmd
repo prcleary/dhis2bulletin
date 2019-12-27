@@ -2,7 +2,7 @@
 title: "`r format(Sys.Date(), '%d %B %Y')`"
 output: 
   word_document:
-    reference_docx: weekly_surveillance_report_template.docx
+    reference_docx: !expr system.file('rmarkdown', 'templates', 'weekly_surveillance_report_template.docx', package = 'dhis2bulletin')
 ---
 
 The Ministry of National Health Services, Regulations and Coordination (MoNHSRC) partially rolled out the implementation of Integrated Disease Surveillance and Response (IDSR) in 2019, which make us enable to issue weekly bulletin.
@@ -25,17 +25,17 @@ The National Institute of Health, Emergency Operation Center (EOC) has been acti
 
 The Seasonal Awareness & Alert Letter (SAAL) and Advisory on Prevention and Control of Dengue has been widely disseminated and made available at NIH website: [www.nih.org.pk](www.nih.org.pk) along with IEC material. The National Guidelines for Dengue Vectors Control in Pakistan are also available at Directorate of Malaria Control. Website [www.dmc.gov.pk](www.dmc.gov.pk).
 
-![Figure 1. IDSR priority diseases reported during last 4 weeks from reporting districts of Pakistan](fig1plot.png)
+![Figure 1. IDSR priority diseases reported during last 4 weeks from reporting districts of Pakistan](figs/fig1plot.png)
 
-![Figure 2. IDSR priority diseases reported during last 12 weeks from reporting districts of Pakistan](fig1plot.png)
+![Figure 2. IDSR priority diseases reported during last 12 weeks from reporting districts of Pakistan](figs/fig1plot.png)
 
-![Figure 3. IDSR priority diseases reported from Azad Jammu and Kashmir (Mirpur) during last 4 weeks](fig3plot.png)
+![Figure 3. IDSR priority diseases reported from Azad Jammu and Kashmir (Mirpur) during last 4 weeks](figs/fig3plot.png)
 
-![Figure 4: IDSR priority diseases reported from Balochistan (Gwadar, Kech and Killa Abdullah) during last 4 weeks](fig4plot.png)
+![Figure 4: IDSR priority diseases reported from Balochistan (Gwadar, Kech and Killa Abdullah) during last 4 weeks](figs/fig4plot.png)
 
-![Figure 5: IDSR priority diseases reported from Khyber Pakhtunkhwa (Haripur and Lakki Marwat) during last 4 weeks](fig5plot.png)
+![Figure 5: IDSR priority diseases reported from Khyber Pakhtunkhwa (Haripur and Lakki Marwat) during last 4 weeks](figs/fig5plot.png)
 
-![Figure 6: IDSR priority diseases reported from Islamabad (ICT HF) during last 4 weeks](fig6plot.png)
+![Figure 6: IDSR priority diseases reported from Islamabad (ICT HF) during last 4 weeks](figs/fig6plot.png)
 
 # IDSR Background
 
@@ -56,9 +56,10 @@ Following activities were conducted during last week (04-10 November 2019):
 
 The tables below were describing the data excluding agreed IDSR priority diseases, they are mainly drought affected areas (support provided by WHO)
 
-![Figure 7: Reported cases of other diseases from reporting AJK districts during last 4 weeks](fig7plot.png)
+![Figure 7: Reported cases of other diseases from reporting AJK districts during last 4 weeks](figs/fig7plot.png)
 
-![Figure 8: Reported cases of other diseases from reporting Balochistan districts during last 4 weeks](fig8plot.png)
+![Figure 8: Reported cases of other diseases from reporting Balochistan districts during last 4 weeks](figs/fig8plot.png)
 
-![Figure 9: Reported cases of other diseases from reporting Khyber Pakhtunkhwa districts during last 4 weeks](fig9plot.png)
+![Figure 9: Reported cases of other diseases from reporting Khyber Pakhtunkhwa districts during last 4 weeks](figs/fig9plot.png)
+
 
