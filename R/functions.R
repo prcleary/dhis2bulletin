@@ -14,9 +14,9 @@
 #' # Use username=admin password=district if using demo DHIS 2
 get_logindetails <- function() {
   username <-
-    rstudioapi::askForPassword('Please enter your DHIS 2 user name')
+    askpass::askpass('Please enter your DHIS 2 user name')
   password <-
-    rstudioapi::askForPassword('Please enter your DHIS 2 password')
+    askpass::askpass('Please enter your DHIS 2 password')
   assign('logindetails',
          list(username = username, password = password),
          '.GlobalEnv')
