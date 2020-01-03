@@ -38,7 +38,7 @@ process_data1 <-
       dat[, .(N = sum(Value)), Data][N > 0, Data]
     dat <- dat[Data %in% data_with_data]
     # Filter to data elements specified
-    if (!is.null(data_elements)) data <- dat[Data %in% data_elements]
+    if (!is.null(data_elements)) dat <- dat[Data %in% data_elements]
     dat[]
   }
 url <-
