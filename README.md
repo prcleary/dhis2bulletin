@@ -1,6 +1,3 @@
-<!-- # TODO plot by ISO week in ggplot2... ? ordered factor -->
-<!-- # TODO Fix missing time periods and formatting -->
-<!-- # ? use highcharter -->
 Draft R code for extracting data from DHIS 2 and populating a bulletin template.
 
 Getting Started
@@ -59,6 +56,8 @@ To update to the latest versions of packages in future you can use the following
     update.packages(ask = FALSE)
     devtools::install_github('ukgovdatascience/govstyle')
     devtools::install_github('prcleary/dhis2bulletin')
+
+One final step: as the script obtains data by using your user name and password, this code will not work if you are using 2-Factor Authentication to log into DHIS 2. You should temporarily disable this in your Settings before running this code.
 
 Authors
 -------

@@ -10,15 +10,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<!-- # TODO plot by ISO week in ggplot2... ? ordered factor -->
-<!-- # TODO Fix missing time periods and formatting -->
-<!-- # ? use highcharter -->
-
 Draft R code for extracting data from DHIS 2 and populating a bulletin template.
 
 ## Getting Started
 
-Make sure that your computer is connected to the Internet and that you have previously followed the **Prerequisites** and **Installing** steps below to install everything required.
+Make sure that your computer is connected to the Internet and that you have previously followed the **Prerequisites** and **Installing** steps below to install everything required. 
 
 Create a new folder where you want the surveillance bulletin and associated outputs to be created. Then create a new project with this folder using the RStudio menu: File -> New Project -> Existing Directory -> Browse to the new folder just created.
 
@@ -78,6 +74,8 @@ update.packages(ask = FALSE)
 devtools::install_github('ukgovdatascience/govstyle')
 devtools::install_github('prcleary/dhis2bulletin')
 ```
+
+One final step: as the script obtains data by using your user name and password, this code will not work if you are using 2-Factor Authentication to log into DHIS 2. You should temporarily disable this in your Settings before running this code.
 
 ## Authors
 
