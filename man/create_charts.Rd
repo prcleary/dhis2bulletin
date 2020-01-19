@@ -4,7 +4,10 @@
 \alias{create_charts}
 \title{(Get Data From DHIS 2 And) Create Charts}
 \usage{
-create_charts()
+create_charts(params)
+}
+\arguments{
+\item{params}{Parameters for username and password entered at knitting}
 }
 \description{
 (Get Data From DHIS 2 And) Create Charts
