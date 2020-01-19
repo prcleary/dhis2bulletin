@@ -3,7 +3,20 @@ title: "`r format(Sys.Date(), '%d %B %Y')`"
 output: 
   word_document:
     reference_docx: !expr system.file('rmarkdown', 'templates', 'weekly_surveillance_report_template.docx', package = 'dhis2bulletin')
+params:
+  username:
+    label: "Enter DHIS 2 user name: "
+    value: "admin"
+  password:
+    label: "Enter DHIS 2 password: "
+    value: "district"
+    input: password
 ---
+
+```{r create_charts, include=FALSE}
+library(dhis2bulletin)
+create_charts(params)
+```
 
 The Ministry of National Health Services, Regulations and Coordination (MoNHSRC) partially rolled out the implementation of Integrated Disease Surveillance and Response (IDSR) in 2019, which make us enable to issue weekly bulletin.
 
@@ -17,7 +30,23 @@ The Ministry of National Health Services, Regulations and Coordination (MoNHSRC)
 
 # Integrated Disease Surveillance and Response (IDSR) Sites
 
-Table to go here
+```{r table1, echo=FALSE}
+if (!exists('data/table1.csv')) {
+  table1 <-
+    data.table::fread(system.file('extdata', 'table1.csv', package = 'dhis2bulletin'))
+  data.table::fwrite(table1, 'data/table1.csv')
+} else {
+  table1 <- data.table::fread('data/table1.csv')
+}
+table_alignment <- paste0('ll', paste0(rep('c', ncol(table1) - 2), collapse = ''))
+knitr::kable(table1,
+             align = table_alignment,
+             format.args = list(big.mark = ','),
+             format = 'markdown')
+```
+
+
+Table 1. ARS (Agreed Reporting Sites)
 
 # Dengue Outbreak Update
 
