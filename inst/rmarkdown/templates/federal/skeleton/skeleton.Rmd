@@ -56,7 +56,7 @@ The Seasonal Awareness & Alert Letter (SAAL) and Advisory on Prevention and Cont
 
 ![Figure 1. IDSR priority diseases reported during last 4 weeks from reporting districts of Pakistan](figs/fig1plot.png)
 
-![Figure 2. IDSR priority diseases reported during last 12 weeks from reporting districts of Pakistan](figs/fig1plot.png)
+![Figure 2. IDSR priority diseases reported during last 12 weeks from reporting districts of Pakistan](figs/fig2plot.png)
 
 ![Figure 3. IDSR priority diseases reported from Azad Jammu and Kashmir (Mirpur) during last 4 weeks](figs/fig3plot.png)
 
